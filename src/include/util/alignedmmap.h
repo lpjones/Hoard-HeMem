@@ -172,7 +172,7 @@ namespace Hoard {
     class SourceHeap : public HL::FreelistHeap<BumpAlloc<65536, MmapAlloc> > { };
 
     /// The map type, with all the pieces in place.
-    typedef MyHashMap<keyType, valType, SourceHeap> mapType;
+    // typedef MyHashMap<keyType, valType, SourceHeap> mapType;
 
     /// The map that maintains the size of each mmapped chunk.
 #if TRACK_SIZE
